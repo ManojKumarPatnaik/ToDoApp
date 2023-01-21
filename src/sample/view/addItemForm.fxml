@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemFormController">
+   <children>
+      <JFXTextField fx:id="taskField" focusColor="#b51d27" layoutX="181.0" layoutY="103.0" prefHeight="48.0" prefWidth="339.0" promptText="Task" unFocusColor="#741e7c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="descriptionField" focusColor="#c62f4a" layoutX="181.0" layoutY="173.0" prefHeight="48.0" prefWidth="339.0" promptText="Description" unFocusColor="#6a22bc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="saveTaskButton" layoutX="282.0" layoutY="250.0" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #d32f2f;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <AnchorPane prefHeight="77.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="269.0" layoutY="18.0" prefHeight="41.0" prefWidth="163.0" text="2DO" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="successLabel" layoutX="336.0" layoutY="82.0" prefHeight="22.0" prefWidth="357.0" text="Task Added Successfully! Add Another One" textFill="#757272" visible="false">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="todosButton" layoutX="531.0" layoutY="359.0" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: #ff6659;" text="My 2Do's (3)" textFill="#393737" visible="false" />
+   </children>
+</AnchorPane>
